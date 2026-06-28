@@ -1,0 +1,56 @@
+<form [formGroup]="tradeForm"
+      (ngSubmit)="onSubmit()">
+
+  <div>
+
+    <label>Buyer ID</label>
+
+    <input
+      type="number"
+      formControlName="buyerId">
+
+  </div>
+
+  <br>
+
+  <div>
+
+    <label>Seller ID</label>
+
+    <input
+      type="number"
+      formControlName="sellerId">
+
+  </div>
+
+  <br>
+
+  <div>
+
+    <label>Amount</label>
+
+    <input
+      type="number"
+      formControlName="amount">
+
+  </div>
+
+  <br>
+
+  <div>
+
+    <label>Shares</label>
+
+    <input
+      type="number"
+      formControlName="shares">
+
+  </div>
+
+  <br>
+
+  <button type="submit">
+    Submit Trade
+  </button>
+
+</form>

@@ -25,13 +25,13 @@ spring:
               predicates:
                 - Path=/settlements/**
 eureka:
-  instance:
-    ip-address: 127.0.0.1
-    prefer-ip-address: true
+  # instance:
+  #   ip-address: 127.0.0.1
+  #   prefer-ip-address: true
 
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
 
 logging:
   level:

@@ -1,0 +1,33 @@
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+
+  <div class="card shadow-lg p-4 rounded-4" style="width: 400px;">
+    
+    <h3 class="text-center mb-4 text-primary">
+      Account Search
+    </h3>
+
+    <form (ngSubmit)="onSubmit()">
+
+      <mat-form-field appearance="outline" class="w-100 mb-3">
+        <mat-label>Account Number</mat-label>
+        <input
+          matInput
+          name="accountNumber"
+          [(ngModel)]="accountId"
+          required>
+      </mat-form-field>
+
+      <div class="d-grid">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit">
+          Submit
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
